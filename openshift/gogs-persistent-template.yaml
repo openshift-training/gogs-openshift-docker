@@ -132,6 +132,7 @@ objects:
   id: ${APPLICATION_NAME}-http
   metadata:
     annotations:
+      kubernetes.io/tls-acme: 'true'
       description: Route for application's http service.
     labels:
       app: ${APPLICATION_NAME}
